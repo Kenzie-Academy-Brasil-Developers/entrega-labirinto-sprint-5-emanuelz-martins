@@ -1,0 +1,41 @@
+:root {
+}
+
+body, main, #maze {
+  width: 100vw;
+}
+
+.cell {}
+
+.row {
+  display: flex;
+}
+
+.wall, .spot, .start, .finish-place {
+  padding: 7.9px;
+}
+
+.wall {
+  background: red;
+}
+
+.spot {
+  background: white;
+}
+
+.start {
+  background: blue;
+}
+
+.finish-place {
+  background: yellow;
+}
+
+.player {
+  width: 14px;
+  top: 164px;
+  left: 1px;
+  height: 14px;
+  position: absolute;
+  background: green;
+}
