@@ -1,18 +1,14 @@
-:root {
-}
-
 body, main, #maze {
   width: 100vw;
 }
-
-.cell {}
 
 .row {
   display: flex;
 }
 
 .wall, .spot, .start, .finish-place {
-  padding: 7.9px;
+  width: 16px;
+  height: 16px;
 }
 
 .wall {
@@ -32,10 +28,10 @@ body, main, #maze {
 }
 
 .player {
-  width: 14px;
-  top: 164px;
-  left: 1px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
+  top: 165px;
+  left: 0px;
   position: absolute;
   background: green;
 }

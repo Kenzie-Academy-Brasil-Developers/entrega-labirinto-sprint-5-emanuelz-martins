@@ -41,11 +41,13 @@ const createMap = () => {
             if (map[row][cell] === 'S') {
                 mazeCell.setAttribute('id', 'start-place');
                 mazeCell.setAttribute('class', 'start');
+                playerPosition = [row, cell];
                 mazeCell.appendChild(player);
             }
             
             if (map[row][cell] === 'F') {
                 mazeCell.setAttribute('class', 'finish-place');
+                finishPosition = [row, cell];
             }
             
             mazeRow.appendChild(mazeCell);
