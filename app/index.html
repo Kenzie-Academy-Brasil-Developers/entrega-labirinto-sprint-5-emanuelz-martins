@@ -4,19 +4,63 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./style/reset.css">
+        <link rel="stylesheet" href="./style/info.css">
+        <link rel="stylesheet" href="./style/title-screen.css">
+        <link rel="stylesheet" href="./style/win-card.css">
+        <link rel="stylesheet" href="./style/game-elements.css">
         <link rel="stylesheet" href="./style/style.css">
-        <title>Document</title>
+        <title>Kirby - And the Maze of Mayonnaise</title>
     </head>
     <body>
+        <audio class="hi" src="../assets/sounds/hi.ogg"></audio>
+        <audio class="goumet-race" src="../assets/sounds/gourmet-race.mp3"></audio>
+        <audio class="win-song" src="../assets/sounds/win-song.ogg"></audio>
+        <audio class="one-up" src="../assets/sounds/1up-sound.ogg"></audio>
         <header>
-            <button id="btn-startGame">Iniciar</button>
+            <hgroup id="title-group" class="gameTitle">
+                <h1 id="title-game" class="gameTitle__mainTitle">Kirby</h1>
+                <h2 id="subTitle-game" class="gameTitle__subTitle">And the Maze of Mayonnaise</h2>
+            </hgroup>
+            <button id="btn-startGame">start</button>
+            <button id="btn-credits">credits</button>
+            <aside>
+                <button class="btn-showInfo">info</button>
+                <div id="info-card" class="info hidden">
+                    <h2 class="info__title">INFO</h2>
+                    <p class="info__description">
+                        Oh no! Help Kirby find his STAR!!!
+                    </p>
+                    <figure>
+                        <img src="../assets/img/spinning-star.gif" alt="Spinning Star">
+                    </figure>
+                </div>
+            </aside>
+            <button id="back-page" class="back-button hidden">back</button>
         </header>
        <main>
-           <div id="maze"></div>
+           <div id="maze" class="maze hidden"></div>
+           <div class="win-card hidden">
+               <figure class="win-card__figure">
+                   <img class="win-card__figure--img" src="../assets/img/kirby-celebrating.png" alt="Kirby Celebrating">
+               </figure>
+               <button id="restart-button" class="win-card__button">restart</button>
+               <h2 class="win-card__title">THX for Playing!</h2>
+           </div>
+           <div id="credits-card" class="credits-card hidden">
+               <h2 class="creadits-card__title">Made by Emanuel Zago Martins</h2>
+               <ul class="credits-card__linkList">
+                   <li><a href="https://www.linkedin.com/in/emanuelzmartins/">Linkedin</a></li>
+                   <li><a href="https://github.com/emanuelz-martins">GitHub</a></li>
+               </ul>
+            </div>
        </main>
+       <script src="./src/initialPageHandler.js"></script>
+       <script src="./src/core/playAudio.js"></script>
        <script src="./src/level.js"></script>
        <script src="./src/keys.js"></script>
+       <script src="./src/victory-check.js"></script>
        <script src="./src/core/motion-control.js"></script>
        <script src="./src/scripts.js"></script>
     </body>

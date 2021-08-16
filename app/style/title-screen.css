@@ -1,0 +1,86 @@
+body {
+    background-image: repeating-linear-gradient(
+        0deg,
+        #b4deec,
+        #b4deec 15px,
+        #ddf0f6 15px,
+        #ddf0f6 16px
+    );
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn-startGame, #btn-credits, .btn-showInfo, .back-button {
+    width: 10rem;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: var(--salmon-pink-color);
+    color: white;
+    font-weight: 800;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.back-button {
+    margin-bottom: 50px;
+}
+
+#btn-startGame:hover, #btn-credits:hover, .btn-showInfo:hover, .back-button:hover {
+    background: var(--light-yellow-color);
+}
+
+
+hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'kirby';
+    -webkit-text-stroke: 1.5px white;
+}
+
+.gameTitle__mainTitle {
+    font-size: 80px;
+    color: var(--salmon-pink-color);
+}
+
+.gameTitle__subTitle {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transform: rotate(-10deg);
+    color: var(--light-yellow-color);
+}
+
+.credits-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 25vw;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.credits-card__linkList {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+}
+
+.credits-card__linkList li a {
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: 'kirby';
+    src: url('../../assets/fonts/kirby-classic.ttf');
+}

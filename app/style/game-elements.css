@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  width: 31vw;
+}
+
+.wall, .spot, .start, .finish-place, .player {
+  width: 20px;
+  height: 20px;
+}
+
+.wall {
+  background-image: url('../../assets/img/starblock.webp');
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.spot, .start {
+  background: white;
+}
+
+.finish-place {
+  background-image: url('../../assets/img/spinning-star.gif');
+  background-size: 25px;
+}
+
+.player {
+  top: 180px;
+  left: 0;
+  position: absolute;
+  background-image: url('../../assets/img/kirby.png');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}

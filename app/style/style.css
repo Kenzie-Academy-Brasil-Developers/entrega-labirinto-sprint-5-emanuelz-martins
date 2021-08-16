@@ -1,37 +1,21 @@
-body, main, #maze {
-  width: 100vw;
+:root {
+--salmon-pink-color: #F2BDC7;
+--matte-pink-color: #F2055C;
+--hot-pink: #F205CB;
+--light-yellow-color: #F2E085;
+--orange-color: #F29D35;
 }
 
-.row {
-  display: flex;
+.hidden {
+display: none;
 }
 
-.wall, .spot, .start, .finish-place {
-  width: 16px;
-  height: 16px;
+.blur {
+    filter: blur(1px);
 }
 
-.wall {
-  background: red;
-}
-
-.spot {
-  background: white;
-}
-
-.start {
-  background: blue;
-}
-
-.finish-place {
-  background: yellow;
-}
-
-.player {
-  width: 16px;
-  height: 16px;
-  top: 165px;
-  left: 0px;
-  position: absolute;
-  background: green;
+.maze {
+    width: 25%;
+    position: relative;
+    margin: 35px auto;
 }
