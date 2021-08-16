@@ -66,6 +66,7 @@ hgroup {
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
+    font-family: '8-bit style';
 }
 
 .credits-card__linkList {
