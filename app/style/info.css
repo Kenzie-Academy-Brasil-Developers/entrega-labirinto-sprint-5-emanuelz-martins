@@ -1,0 +1,11 @@
+aside img {
+    max-width: 40px;
+}
+
+.info {
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'kirby';
+}

@@ -1,0 +1,21 @@
+:root {
+--salmon-pink-color: #F2BDC7;
+--matte-pink-color: #F2055C;
+--hot-pink: #F205CB;
+--light-yellow-color: #F2E085;
+--orange-color: #F29D35;
+}
+
+.hidden {
+display: none;
+}
+
+.blur {
+    filter: blur(1px);
+}
+
+.maze {
+    width: 25%;
+    position: relative;
+    margin: 35px auto;
+}
